@@ -882,66 +882,44 @@ body.dark .work-links img {
 /* ----- about-text -----*/
 /* --------------------------------- */
 
-.about-text {
+/* Section styling */
+.about-content {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--gutter-small);
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gutter-large);
+  align-items: center;
   margin-block-start: var(--gutter-x-large);
-  padding: var(--gutter-medium);
-  background-color: var(--bg-color-secondary);
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
 }
 
 @media (max-width: 1100px) {
-  .about-text {
+  .about-content {
     grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 645px) {
-  .about-text {
-    padding: var(--gutter-small);
-  }
-}
-
-.about-text p {
+.about-text {
   font-size: var(--text-medium);
   line-height: 1.6;
   color: var(--text-color);
-  margin-block-end: var(--gutter-small);
 }
 
-.about-text p:first-of-type {
-  font-weight: bold;
+.about-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
 }
 
-.about-text p:last-of-type {
-  font-style: italic;
+/* Optional: Add styling for the image container */
+.about-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color-secondary);
+  padding: var(--gutter-small);
+  border-radius: var(--border-radius);
 }
 
-/* Add a background image or color if desired */
-.about-text {
-  background-image: linear-gradient(
-    rgba(255, 255, 255, 0.9),
-    rgba(255, 255, 255, 0.9)
-  );
-  border: 1px solid var(--border-color);
-}
-
-/* Optional: Add hover effect */
-.about-text:hover {
-  background-color: var(--bg-color-hover);
-  transform: scale(1.02);
-  transition: all 0.3s ease;
-}
-
-/* Add more specific styling for headings if you use any */
-.about-text h3 {
-  margin-bottom: var(--gutter-small);
-  font-size: var(--text-large);
-  color: var(--text-heading-color);
-}
 
 /* --------------------------------- */
 /* ----- Skills -----*/
