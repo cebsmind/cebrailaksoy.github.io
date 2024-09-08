@@ -920,6 +920,10 @@ body.dark .work-links img {
   border-radius: var(--border-radius);
 }
 
+.about-text .btn-cta {
+  margin-top: 30px; /* Adjust this value as needed */
+}
+
 
 /* --------------------------------- */
 /* ----- Skills -----*/
