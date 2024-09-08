@@ -921,7 +921,14 @@ body.dark .work-links img {
 }
 
 .about-text .btn-cta {
-  margin-top: 30px; /* Adjust this value as needed */
+  margin-top: 30px; /* Add space above the button */
+  display: inline-block; /* Ensure the button is treated like a block */
+  padding: 10px 20px; /* Add some padding for better button size */
+  background-color: var(--btn-bg-color); /* Adjust button background color */
+  color: var(--btn-text-color); /* Button text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: var(--border-radius); /* Button border radius */
+  box-shadow: var(--box-shadow); /* Add box-shadow for a nicer effect */
 }
 
 
